@@ -1,0 +1,13 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+.container {
+  padding: 0;
+  margin: auto;
+  width: 600px;
+  height: 600px;
+  background-color: rgb(194, 250, 233);
+  border: 10px;
+}
