@@ -6,8 +6,8 @@
 .container {
   padding: 0;
   margin: auto;
-  width: 500px;
-  height: 500px;
+  width: 300px;
+  height: 300px;
   background-color: rgb(194, 250, 233);
   border: 8px dashed rgb(154, 239, 241);
 }
