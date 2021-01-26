@@ -6,6 +6,7 @@ let ned = document.getElementById("ned");
 let counter = 0;
 let timeTotal = 60;
 let win = 30;
+let timeCounter;
 
 function addPoints() {
   counter++;
@@ -19,11 +20,17 @@ function addPoints() {
 player.addEventListener("mouseover", addPoints);
 
 function resTime() {
-  timeTotal--;
-  time.innerHTML = "Tiempo:" + timeTotal;
-  if (timeTotal === 0) {
-    alert("Has perdido");
-    timeTotal = 0;
-  }
+  let timeTotal = 60;
+  clearInterval(timeCounter);
+  document.querySelector("time").innerHTML = time;
+
+  timeCounter = setInterval(() => {
+    let resultTime = document.querySelector("time");
+    timeTotal--;
+    resultTime.innerHTML = time;
+    if (timeTotal === 0) {
+      alert("Has perdido");
+      clearInterval(timeCounter);
+    }
+  }, 1000);
 }
-setInterval(resTime, 1000);

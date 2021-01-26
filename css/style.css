@@ -32,3 +32,21 @@
   text-align: center;
   padding: 10px 0px;
 }
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+.main {
+  height: 80vh;
+}
+.icon {
+  font-size: 30px;
+  color: black;
+  border-radius: 50%;
+  border: 2px solid black;
+  padding: 8px 8px;
+  display: inline-block;
+  transition: 1s;
+  list-style: none;
+}
